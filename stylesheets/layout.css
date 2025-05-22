@@ -1,0 +1,101 @@
+.page-404 {
+  height: 100vh;
+  overflow: hidden;
+  background: url('../images/not-found.png') no-repeat center center / cover,
+    #000;
+  background-size: 82vw;
+
+  position: relative;
+}
+
+.page-404::before {
+  width: 100%;
+  height: 151px;
+
+  content: '';
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  background: url('../images/top-gradient.png') no-repeat center center / cover;
+  z-index: 0;
+}
+
+.page-404::after {
+  width: 100%;
+  height: 151px;
+
+  content: '';
+
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+
+  background: url('../images/bottom-gradient.png') no-repeat center center /
+    cover;
+  z-index: 0;
+}
+
+.page-404 .wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-48%, -50%);
+  color: #f5da24;
+  text-align: center;
+  font-family: 'Cascadia Code PL Regular';
+  font-size: 1.25vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.6px;
+  text-transform: lowercase;
+}
+.button-wrap {
+  text-align: center;
+  width: 100%;
+
+  position: relative;
+  margin-top: auto;
+  margin-bottom: 6vw;
+
+  z-index: 10;
+}
+
+.home-link {
+  display: inline-block;
+  padding: 22px 196px;
+  margin: -80px;
+  background: #f5da24;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: lowercase;
+  font-family: 'Helvetica Neue', monospace;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 120%; /* 54px */
+  letter-spacing: -2.25px;
+  text-transform: lowercase;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 0 0 1px #f5da24;
+}
+
+.home-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 4px 2px #f5da24;
+}
+.img-404::after {
+  pointer-events: none;
+  opacity: 0.5;
+  background: url('../images/noise.png') lightgray 50% / cover no-repeat;
+  mix-blend-mode: plus-darker;
+}
