@@ -3,3 +3,15 @@
   src: url('../fonts/CascadiaCodePL-Regular.woff2') format('woff2');
   font-weight: normal;
 }
+
+@font-face {
+  font-family: 'Helvetica Neue', sans-serif;
+  src: url('../fonts/HelveticaNeue-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue', sans-serif;
+  src: url('../fonts/HelveticaNeue-Medium.otf') format('opentype');
+  font-weight: 500;
+}

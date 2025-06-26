@@ -5,19 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
 
+    <link rel="stylesheet" href="./stylesheets/reset.css" />
     <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link rel="stylesheet" href="./stylesheets/home.css" />
 
-    <script src="./javascript/index.js"></script>
   </head>
   <body>
-    <h1>Главная</h1>
-    <nav>
-      <a href="about.html">О нас</a>
-      <a href="book.html">Руководство</a>
-      <a href="events.html">Реестр</a>
-      <a href="gallery.html">Галерея</a>
-      <a href="archive.html">Архив</a>
-      <a href="shop.html">Витрина</a>
-    </nav>
+    <div class="menu-container">
+      <div class="menu">
+        <div class="menu-head-container">
+          <p class="title">навиум</p>
+          <p id="menu-close" class="close">закрыть</p>
+        </div>
+        <div class="menu-items-list">
+          <a href="#" style="--content: 'о нас'">о нас</a>
+          <a href="#" style="--content: 'витрина'">витрина</a>
+          <a href="#" style="--content: 'галерея'">галерея</a>
+          <a href="#" style="--content: 'реестр'">реестр</a>
+          <a href="#" style="--content: 'руководство'">руководство</a>
+          <a href="#" style="--content: 'архив'">архив</a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="head-container">
+        <img src="./images/home/logo.svg" alt="Навиум" class="logo">
+        <a id="menu-open" href="#" class="menu">меню</a>
+      </div>
+      <div class="contacts">
+        <div class="contacts-list">
+          <a href="mailto:navium@studio-me.com" class="contact">navium@studio-me.com</a>
+          <a href="tel:+74957211984" class="contact">+7 495 721-19-84</a>
+        </div>
+        <p class="about-us">студия реконструкции
+воспоминаний. мы
+помогаем восстановить
+утраченные фрагменты
+памяти для каждого.</p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="links-container">
+        <a href="#">о нас</a>
+        <a href="#">витрина</a>
+        <a href="#">галерея</a>
+      </div>
+      <div class="links-container">
+        <a href="#">реестр</a>
+        <a href="#">руководство</a>
+        <a href="#">архив</a>
+      </div>
+      <div class="contacts">
+        <a href="tel:88000008011">8 800 000 80 11</a>
+        <p class="help-text">круглосуточный телефон
+call-центра</p>
+      </div>
+
+      <img src="./images/home/logo.svg" alt="Навиум" class="logo">
+    </footer>
+    <div class="infinite-line">
+      <div class="items-container">
+        <p>студия реконструкции воспоминаний</p>
+        <p>студия реконструкции воспоминаний</p>
+        <p>студия реконструкции воспоминаний</p>
+        <p>студия реконструкции воспоминаний</p>
+        <p>студия реконструкции воспоминаний</p>
+        <p>студия реконструкции воспоминаний</p>
+        <p>студия реконструкции воспоминаний</p>
+        <p>студия реконструкции воспоминаний</p>
+      </div>
+      <div class="items-container">
+        <p>студия реконструкции воспоминаний</p>
+        <p>студия реконструкции воспоминаний</p>
+        <p>студия реконструкции воспоминаний</p>
+        <p>студия реконструкции воспоминаний</p>
+        <p>студия реконструкции воспоминаний</p>
+        <p>студия реконструкции воспоминаний</p>
+        <p>студия реконструкции воспоминаний</p>
+        <p>студия реконструкции воспоминаний</p>
+      </div>
+    </div>
+
+    <script src="./javascript/index.js"></script>
   </body>
 </html>
