@@ -1,3 +1,7 @@
+body {
+  background: #000;
+}
+
 .page-404 {
   background: url('../images/not-found.png') no-repeat center center / cover,
     #000;
@@ -17,7 +21,7 @@
   top: 0;
   left: 0;
 
-  background: url('../images/top-gradient.png') no-repeat center center / cover;
+  background: linear-gradient(-180deg, #F5DA24 3.64%, rgba(72, 72, 72, 0.00) 26.44%);
   z-index: 0;
 }
 
@@ -32,9 +36,10 @@
   bottom: 0;
   left: 0;
 
-  background: url('../images/bottom-gradient.png') no-repeat center center /
-    cover;
+  background: linear-gradient(-180deg, #F5DA24 3.64%, rgba(72, 72, 72, 0.00) 26.44%);
   z-index: 0;
+
+  transform: rotate(180deg);
 }
 
 .page-404 .wrapper {
@@ -49,7 +54,7 @@
   transform: translate(-48%, -50%);
   color: #f5da24;
   text-align: center;
-  font-family: 'Cascadia Code PL Regular';
+  font-family: 'Cascadia Code PL';
   font-size: 1.65vw;
   font-style: normal;
   font-weight: 400;
@@ -97,4 +102,314 @@
   opacity: 0.5;
   background: url('../images/noise.png') lightgray 50% / cover no-repeat;
   mix-blend-mode: plus-darker;
+}
+
+/* Menu */
+
+
+.menu-container {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  opacity: 0;
+  visibility: hidden;
+
+  z-index: 100;
+}
+
+.menu-container .menu {
+  padding: 1.56vw 5.2vw 5.72vw;
+
+  height: 87vh;
+
+  background: #000;
+  box-shadow: 0 18px 15px 0 rgba(0, 0, 0, 0.00);
+
+  transform: translateY(-100%);
+  transition: all 500ms linear;
+}
+
+.menu-container.opened {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-container .menu .menu-head-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-container .menu .menu-head-container * {
+  color: #FFF;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 2.34vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 54px */
+  letter-spacing: -0.9px;
+  text-transform: lowercase;
+}
+
+.menu-container .menu .menu-head-container .close {
+  transition: color 250ms ease-in-out;
+  cursor: pointer;
+}
+
+.menu-container .menu .menu-head-container .close:hover {
+  color: #F5DA24;
+}
+
+.menu-container .menu .menu-items-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  margin-top: 2.45vw;
+}
+
+.menu-container .menu .menu-items-list a {
+  color: transparent;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 4.1vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 120px */
+  letter-spacing: -2px;
+  text-transform: lowercase;
+
+  position: relative;
+
+  text-align: right;
+}
+
+.menu-container .menu .menu-items-list a::before {
+  content: var(--content);
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 250ms ease-in-out;
+}
+
+.menu-container .menu .menu-items-list a:hover::before {
+  color: #F5DA24;
+  transform: translateX(-18.48vw);
+}
+
+/* </Menu> */
+
+
+footer {
+  padding: 1.56vw 5.2vw 5.72vw;
+
+  display: flex;
+  align-items: flex-start;
+}
+
+footer .links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.78vw;
+}
+
+footer a {
+  color: #FFF;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 2.34vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 54px */
+  letter-spacing: -2.25px;
+  text-transform: lowercase;
+}
+
+.links-container + .links-container {
+  margin-left: 9.37vw;
+}
+
+footer .contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.78vw;
+  margin-left: 4.53vw;
+}
+
+footer .contacts .help-text {
+  color: rgba(255, 255, 255, 0.5);
+
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.56vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -1.5px;
+  text-transform: lowercase;
+
+  white-space: pre-wrap;
+}
+
+footer .logo {
+  width: 11.92vw;
+  height: 7.96vw;
+
+  margin-left: auto;
+  filter: invert(1);
+}
+
+@keyframes scrollAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1.56vw));
+  }
+}
+
+.infinite-line {
+  width: 100%;
+  height: 3.59vw;
+  background: #F5DA24;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1.56vw;
+  user-select: none;
+  overflow: hidden;
+}
+
+.infinite-line .items-container {
+  display: flex;
+  align-items: center;
+  gap: 1.56vw;
+  flex-shrink: 0;
+  min-width: 100%;
+  animation: scrollAnimation 20s linear infinite;
+  animation-direction: reverse;
+}
+
+.infinite-line .items-container p {
+  color: #000;
+
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.82vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -1.75px;
+  text-transform: lowercase;
+}
+
+.header-text {
+  color: #000;
+
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 2.63vw;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.9px;
+  text-transform: lowercase;
+}
+
+.button {
+  color: #000;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 2.34vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.12vw;
+  text-transform: lowercase;
+  text-align: center;
+
+  background: url("../images/button-background.jpg") no-repeat center center / cover;
+
+  padding: 1.15vw 0;
+}
+
+.button.small {
+  padding: 0.57vw 0;
+}
+
+
+.button.stretch {
+  width: 100%;
+}
+
+header {
+  padding: 1.56vw 5.21vw;
+
+  height: 30.94vw;
+
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+.shadowed-text {
+  color: #F5DA24;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 2.34vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.12vw;
+  text-transform: lowercase;
+
+  position: relative;
+}
+
+.shadowed-text span {
+  position: relative;
+  z-index: 10;
+}
+
+.shadowed-text::before {
+  content: var(--content);
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  color: #F5DA24;
+
+  -webkit-text-stroke-width: 0.63vw;
+  -webkit-text-stroke-color: #000;
+}
+
+main .example-text {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.56vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.078vw;
+  text-transform: lowercase;
+
+  text-align: right;
+}
+
+.mb-10 {
+  margin-bottom: 0.52vw;
+}
+
+.mb-30 {
+  margin-bottom: 1.56vw;
+}
+
+.d-block {
+  display: block;
 }

@@ -1,0 +1,335 @@
+header {
+  background: url("../images/events/background.jpg") no-repeat center top/cover;
+}
+
+header .boxed-text-1 {
+  padding: 0.26vw 1.67vw 1.2vw 1.51vw;
+  background: #000000;
+
+  position: absolute;
+  top: 10.1vw;
+  left: 11.72vw;
+}
+
+header .boxed-text-1 span, header .boxed-text-2 span {
+  color: #F5DA24;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 3.12vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -0.21vw;
+  text-transform: lowercase;
+  white-space: pre-wrap;
+
+  z-index: 10;
+  position: relative;
+}
+
+header .boxed-text-1 .glitch-1 {
+  position: absolute;
+
+  width: 15.78vw;
+  height: 2.66vw;
+
+  background: #000000;
+
+  left: 3.7vw;
+  top: -1.35vw;
+}
+
+header .boxed-text-1 .glitch-2 {
+  position: absolute;
+
+  width: 19.06vw;
+  height: 1.72vw;
+
+  background: #000000;
+
+  right: -1.41vw;
+  bottom: -1.15vw;
+}
+
+header .boxed-text-1 .glitch-3 {
+  position: absolute;
+
+  width: 10.21vw;
+  height: 2.24vw;
+
+  background: #000000;
+
+  left: 2.34vw;
+  bottom: -1.61vw;
+}
+
+header .boxed-text-1 .glitch-4 {
+  position: absolute;
+
+  width: 4.32vw;
+  height: 4.95vw;
+
+  background: #000000;
+
+  left: -3.13vw;
+  bottom: 1.46vw;
+}
+
+header .boxed-text-2 {
+  padding: 1.2vw 1.2vw 1.67vw;
+
+  position: absolute;
+  bottom: 3.23vw;
+  right: 8.96vw;
+}
+
+
+header .boxed-text-2 .glitch-0 {
+  position: absolute;
+
+  width: 10.52vw;
+  height: 2.4vw;
+
+  right: 5.05vw;
+  top: -1.61vw;
+
+  background: #000;
+}
+
+header .boxed-text-2 .glitch-1 {
+  position: absolute;
+
+  width: 100%;
+  height: 5.26vw;
+
+  left: 0;
+  top: 0;
+
+  background: #000;
+}
+
+header .boxed-text-2 .glitch-2 {
+  position: absolute;
+
+  width: 91%;
+  height: 5.26vw;
+
+  left: -2.24vw;
+  top: 3.49vw;
+
+  background: #000;
+}
+
+header .boxed-text-2 .glitch-3 {
+  position: absolute;
+
+  width: 100%;
+  height: 5.26vw;
+
+  left: 0.36vw;
+  bottom: 0;
+
+  background: #000;
+}
+
+header .boxed-text-2 .glitch-4 {
+  position: absolute;
+
+  width: 5.52vw;
+  height: 2.4vw;
+
+  left: 5.42vw;
+  bottom: -1.41vw;
+
+  background: #000;
+}
+
+#menu-open {
+  color: #fff;
+}
+
+main {
+  padding: 3.65vw 5.21vw;
+
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.65vw;
+}
+
+main .folders-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1.04vw;
+}
+
+main .folders-list .folder {
+  padding: 2.4vw 0.57vw;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.26vw;
+
+  height: 13.49vw;
+
+  background: url("../images/events/folder.png") no-repeat center center/contain;
+}
+
+main .folders-list .folder span {
+  color: #000;
+  font-family: "Cascadia Code PL", sans-serif;
+  font-size: 1.41vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: -0.1vw;
+  text-transform: lowercase;
+}
+
+main .banner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.56vw;
+}
+
+main .banner-container img {
+  height: 34vw;
+
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.popup-content-container {
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.65);
+
+  z-index: 12;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: opacity 250ms ease-in-out;
+}
+
+.popup-content-container.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-content-container .popup {
+  padding: 2.19vw 2.55vw 2.19vw 2.71vw;
+
+  width: 61.88vw;
+  height: fit-content;
+
+  display: flex;
+  gap: 1.56vw;
+
+  position: relative;
+
+  border-radius: 1.09vw;
+
+  background: url('../images/events/noise.png') no-repeat center center/cover, #F5DA24;
+
+  transform: translateY(-100%) scale(0.75);
+}
+
+.popup-content-container.visible .popup {
+  animation: popup-in 500ms ease-in forwards;
+}
+
+.popup-content-container .popup .popup-title {
+  padding: 1.04vw 3.54vw 0;
+
+  position: absolute;
+  left: 0;
+
+  background: #F5DA24;
+
+  border-top-left-radius: 1.09vw;
+  border-top-right-radius: 1.09vw;
+
+  top: -2.6vw;
+
+  color: #000;
+
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 2.34vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.12vw;
+}
+
+.popup-content-container .popup .popup-close {
+  padding: 1.04vw 2.14vw 0;
+
+  position: absolute;
+  right: 0;
+
+  cursor: pointer;
+
+  background: #F5DA24;
+
+  border-top-left-radius: 1.09vw;
+  border-top-right-radius: 1.09vw;
+
+  top: -2.6vw;
+
+  color: #000;
+
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 2.34vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.12vw;
+}
+
+.popup-content-container .popup img {
+  width: 51.15vw;
+  height: 32.71vw;
+}
+
+.popup-content-container .popup .text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.6vw;
+}
+
+.popup-content-container .popup .text-container .text-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35vw;
+}
+
+.popup-content-container .popup .text-container .text-row .title {
+  color: #000;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 2.34vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 70%;
+  letter-spacing: -0.12vw;
+}
+
+.popup-content-container .popup .text-container .text-row .description {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.56vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: -0.078vw;
+  text-transform: lowercase;
+}

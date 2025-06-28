@@ -1,0 +1,237 @@
+header {
+  background: url("../images/archive/background.jpg") no-repeat center top/cover;
+}
+
+.header-text:not(:nth-child(2)) {
+  color: #fff;
+}
+
+header .boxed-text-1 {
+  padding: 0.26vw 1.67vw 1.2vw 1.51vw;
+
+  position: absolute;
+  top: 10.1vw;
+  left: 11.72vw;
+}
+
+header .boxed-text-1 span, header .boxed-text-2 span {
+  color: #F5DA24;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 3.12vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -0.21vw;
+  text-transform: lowercase;
+  white-space: pre-wrap;
+
+  z-index: 10;
+  position: relative;
+}
+
+header .boxed-text-1 .glitch-0 {
+  position: absolute;
+
+  width: 100%;
+  height: 83px;
+
+  background: #000000;
+
+  left: 0;
+  top: 0;
+}
+
+header .boxed-text-1 .glitch-1 {
+  position: absolute;
+
+  width: 15.78vw;
+  height: 2.66vw;
+
+  background: #000000;
+
+  left: 3.7vw;
+  top: -1.35vw;
+}
+
+header .boxed-text-1 .glitch-2 {
+  position: absolute;
+
+  width: 19.06vw;
+  height: 1.72vw;
+
+  background: #000000;
+
+  right: 4vw;
+  bottom: 2vw;
+}
+
+header .boxed-text-1 .glitch-3 {
+  position: absolute;
+
+  width: 10.21vw;
+  height: 2.24vw;
+
+  background: #000000;
+
+  left: 2.34vw;
+  bottom: -1.61vw;
+}
+
+header .boxed-text-1 .glitch-4 {
+  position: absolute;
+
+  width: 4.32vw;
+  height: 4.95vw;
+
+  background: #000000;
+
+  left: -3.13vw;
+  top: 2.46vw;
+}
+
+header .boxed-text-1 .glitch-5 {
+  width: 106%;
+  height: 3.49vw;
+
+  position: absolute;
+
+  background: #000000;
+
+  left: 0;
+  bottom: 0;
+}
+
+header .boxed-text-1 .glitch-6 {
+  position: absolute;
+
+  width: 19.06vw;
+  height: 1.96vw;
+
+  background: #000000;
+
+  right: -1.72vw;
+  bottom: -1.64vw;
+}
+
+header .boxed-text-2 {
+  padding: 0 1.2vw 1.67vw;
+
+  position: absolute;
+  bottom: 3.23vw;
+  right: 8.96vw;
+}
+
+
+header .boxed-text-2 .glitch-0 {
+  position: absolute;
+
+  width: 10.52vw;
+  height: 2.4vw;
+
+  right: 5.05vw;
+  top: -1.61vw;
+
+  background: #000;
+}
+
+header .boxed-text-2 .glitch-1 {
+  position: absolute;
+
+  width: 100%;
+  height: 5.26vw;
+
+  left: 0;
+  top: 0;
+
+  background: #000;
+}
+
+header .boxed-text-2 .glitch-2 {
+  position: absolute;
+
+  width: 67%;
+  height: 5.26vw;
+
+  left: -2.24vw;
+  top: 3.49vw;
+
+  background: #000;
+}
+
+header .boxed-text-2 .glitch-3 {
+  position: absolute;
+
+  width: 20.56vw;
+  height: 2.24vw;
+
+  left: 0;
+  bottom: -0.25vw;
+
+  background: #000;
+}
+
+header .boxed-text-2 .glitch-4 {
+  position: absolute;
+
+  width: 8.02vw;
+  height: 2.4vw;
+
+  left: 5.42vw;
+  bottom: -1.41vw;
+
+  background: #000;
+}
+
+main {
+  padding: 3.65vw 5.21vw;
+
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.65vw;
+}
+
+main .envelopes-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1.04vw;
+}
+
+main .envelopes-container .envelope {
+  height: 11.15vw;
+
+  padding-right: 0.78vw;
+
+  background: url("../images/archive/envelope.jpg") no-repeat center top/cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  color: #000;
+  text-align: right;
+  font-family: "Cascadia Code PL", sans-serif;
+  font-size: 1.41vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: -0.07vw;
+  text-transform: lowercase;
+}
+
+main .one-stranger-life-poster {
+  height: 54.43vw;
+  object-fit: cover;
+}
+
+main .shop-poster {
+  height: 34vw;
+  object-fit: cover;
+}
+
+main .shop-text-container {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
