@@ -101,7 +101,7 @@ body {
   pointer-events: none;
   opacity: 0.5;
   background: url('../images/noise.png') lightgray 50% / cover no-repeat;
-  mix-blend-mode: plus-darker;
+  mix-blend-mode: multiply;
 }
 
 /* Menu */
@@ -126,6 +126,10 @@ body {
 
 .menu-container .menu {
   padding: 1.56vw 5.2vw 5.72vw;
+
+  left: 0;
+  top: 0;
+  width: 100%;
 
   height: 87vh;
 
@@ -319,6 +323,15 @@ footer .logo {
   text-transform: lowercase;
 }
 
+a.header-text {
+  cursor: pointer;
+  transition: color 250ms ease-in-out
+}
+
+a.header-text:hover {
+  color: #F5DA24;
+}
+
 .button {
   color: #000;
   font-family: "Helvetica Neue", sans-serif;
@@ -329,6 +342,9 @@ footer .logo {
   letter-spacing: -0.12vw;
   text-transform: lowercase;
   text-align: center;
+
+  border: none;
+  outline: none;
 
   background: url("../images/button-background.jpg") no-repeat center center / cover;
 
@@ -350,9 +366,29 @@ header {
   height: 30.94vw;
 
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
 
   position: relative;
+}
+
+header .cover-image, header canvas {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  left: 0;
+  top: 0;
+}
+
+header .cover-image img {
+  width: 100%;
+  height: 100%;
+}
+
+header > *:not(:first-child) {
+  z-index: 10;
 }
 
 .shadowed-text {
@@ -413,3 +449,173 @@ main .example-text {
 .d-block {
   display: block;
 }
+
+
+header .boxed-text-1 span, header .boxed-text-2 span {
+  color: #F5DA24;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 3.12vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -0.21vw;
+  text-transform: lowercase;
+  white-space: pre-wrap;
+
+  z-index: 10;
+  position: relative;
+}
+
+/* popups */
+
+.popup-content-container {
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.65);
+
+  z-index: 12;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: opacity 250ms ease-in-out;
+}
+
+.popup-content-container.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-content-container .popup {
+  padding: 2.19vw 2.55vw 2.19vw 2.71vw;
+
+  width: 61.88vw;
+  height: fit-content;
+
+  display: flex;
+  gap: 1.56vw;
+
+  position: relative;
+
+  border-radius: 1.09vw;
+
+  background: #F5DA24;
+
+  transform: translateY(-100%) scale(0.75);
+}
+
+.popup-content-container .popup::before {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  content: "";
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 1;
+
+  background: url('../images/events/noise.png') no-repeat center center/cover;
+
+  mix-blend-mode: multiply;
+}
+
+.popup-content-container.visible .popup {
+  animation: popup-in 500ms ease-in forwards;
+}
+
+.popup-content-container .popup .popup-title {
+  padding: 1.04vw 3.54vw 0;
+
+  position: absolute;
+  left: 0;
+
+  background: #F5DA24;
+
+  border-top-left-radius: 1.09vw;
+  border-top-right-radius: 1.09vw;
+
+  top: -2.6vw;
+
+  color: #000;
+
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 2.34vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.12vw;
+}
+
+.popup-content-container .popup .popup-close {
+  padding: 1.04vw 2.14vw 0;
+
+  position: absolute;
+  right: 0;
+
+  cursor: pointer;
+
+  background: #F5DA24;
+
+  border-top-left-radius: 1.09vw;
+  border-top-right-radius: 1.09vw;
+
+  top: -2.6vw;
+
+  color: #000;
+
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 2.34vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.12vw;
+}
+
+.popup-content-container .popup img {
+  width: 51.15vw;
+  height: 32.71vw;
+}
+
+.popup-content-container .popup .text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.6vw;
+}
+
+.popup-content-container .popup .text-container .text-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35vw;
+}
+
+.popup-content-container .popup .text-container .text-row .title {
+  color: #000;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 2.34vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 70%;
+  letter-spacing: -0.12vw;
+}
+
+.popup-content-container .popup .text-container .text-row .description {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.56vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: -0.078vw;
+  text-transform: lowercase;
+}
+/* </popups> */

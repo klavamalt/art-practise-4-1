@@ -1,28 +1,9 @@
-header {
-  background: url("../images/about/background.jpg") no-repeat center top/cover;
-}
-
 header .boxed-text-1 {
   padding: 0.26vw 1.67vw 1.2vw 1.51vw;
 
   position: absolute;
   top: 10.1vw;
   left: 11.72vw;
-}
-
-header .boxed-text-1 span, header .boxed-text-2 span {
-  color: #F5DA24;
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 3.12vw;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 110%;
-  letter-spacing: -0.21vw;
-  text-transform: lowercase;
-  white-space: pre-wrap;
-
-  z-index: 10;
-  position: relative;
 }
 
 header .boxed-text-1 .glitch-0 {
@@ -232,4 +213,149 @@ main .map-container .map-info .row .text {
 main .poster {
   height: 37.45vw;
   object-fit: cover;
+}
+
+main .map-container .map.mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header .boxed-text-1 {
+    padding: 2px 11px 5px 10px;
+
+    background: #000000;
+
+    left: 45px;
+    top: 119px;
+  }
+
+  header .boxed-text-1 .glitch-0, header .boxed-text-1 .glitch-2, header .boxed-text-1 .glitch-5 {
+    display: none;
+  }
+
+  header .boxed-text-1 .glitch-1 {
+    width: 125px;
+    height: 21px;
+
+    top: -13px;
+    left: 29px;
+  }
+
+  header .boxed-text-1 .glitch-4 {
+    width: 34px;
+    height: 38px;
+
+    left: -24px;
+    bottom: 0;
+    top: unset;
+  }
+
+  header .boxed-text-1 .glitch-3 {
+    width: 79px;
+    height: 13px;
+
+    left: 19px;
+    bottom: -10px;
+  }
+
+  header .boxed-text-1 .glitch-6 {
+    width: 124px;
+    height: 24px;
+
+    bottom: -18px;
+    right: -13px;
+  }
+
+  header .boxed-text-2 {
+    padding: 9px 0 14px 9px;
+
+    bottom: 97px;
+    right: 29px;
+  }
+
+  header .boxed-text-2 .glitch-0 {
+    width: 79px;
+    height: 18px;
+
+    top: -12px;
+    right: 57px;
+  }
+
+  header .boxed-text-2 .glitch-1 {
+    width: 274px;
+    height: 41px;
+
+    left: 0;
+    top: 0;
+  }
+
+  header .boxed-text-2 .glitch-2 {
+    width: 109%;
+    height: 40px;
+
+    left: -17px;
+    top: 33px;
+  }
+
+  header .boxed-text-2 .glitch-3 {
+    width: 174px;
+    height: 40px;
+
+    bottom: 0;
+    left: 3px;
+  }
+
+  header .boxed-text-2 .glitch-4 {
+    width: 98px;
+    height: 18px;
+
+    bottom: -12px;
+    left: 39px;
+  }
+
+  main {
+    padding: 30px 0;
+    gap: 30px;
+  }
+
+  main .map-container {
+    grid-template-columns: 1fr;
+  }
+
+  main .map-container .map.desktop {
+    display: none;
+  }
+
+  main .map-container .map.mobile {
+    display: flex;
+  }
+
+  main .map-container .map-info {
+    gap: 15px;
+  }
+
+  main .map-container .map {
+    width: 100%;
+    height: 244px;
+  }
+
+  main .map-container .map-info .row {
+    padding: 0 20px;
+    gap: 12px;
+  }
+
+  main .map-container .map-info .row .text {
+    font-size: 15px;
+    line-height: 120%;
+    letter-spacing: -0.75px;
+  }
+
+  main .content-container {
+    padding: 0 20px;
+  }
+
+  main .poster {
+    width: 100%;
+    height: 244px;
+  }
 }

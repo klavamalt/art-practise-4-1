@@ -1,5 +1,9 @@
 const lockBodyScroll = () => {
+  const prevScroll = window.scrollY;
+
   document.body.style.overflow = 'hidden';
+
+  setTimeout(() => window.scrollTo(0, prevScroll), 1);
 }
 
 const unlockBodyScroll = () => {
