@@ -185,100 +185,102 @@ main .banner-container img {
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   header .boxed-text-1 {
-    left: 41px;
-    top: 181px;
+    left: 9.903vw;
+    top: 43.720vw;
   }
 
   header .boxed-text-1 .glitch-1 {
-    width: 125px;
-    height: 21px;
-    top: -10px;
+      width: 30.193vw;
+      height: 5.072vw;
+      top: -2.415vw;
   }
 
   header .boxed-text-1 .glitch-2 {
-    width: 144px;
-    height: 13px;
-    bottom: -10px;
+      width: 34.783vw;
+      height: 3.140vw;
+      bottom: -2.415vw;
   }
 
   header .boxed-text-1 .glitch-3 {
-    width: 77px;
-    height: 17px;
-    bottom: -10px;
+      width: 18.599vw;
+      height: 4.106vw;
+      bottom: -2.415vw;
   }
 
   header .boxed-text-1 .glitch-4 {
-    width: 34px;
-    height: 39px;
-    left: -20px;
+      width: 8.212vw;
+      height: 9.420vw;
+      left: -4.830vw;
   }
 
   header .boxed-text-2 {
-    padding: 10px 13px;
-    bottom: 114px;
+      padding: 2.415vw 3.140vw;
+      bottom: 27.536vw;
   }
 
   header .boxed-text-2 .glitch-0 {
-    width: 79px;
-    height: 18px;
-    top: -10px;
+      width: 19.082vw;
+      height: 4.348vw;
+      top: -2.415vw;
   }
 
-  header .boxed-text-2 .glitch-1, header .boxed-text-2 .glitch-2, header .boxed-text-2 .glitch-3 {
-    height: 40px;
+  header .boxed-text-2 .glitch-1,
+  header .boxed-text-2 .glitch-2,
+  header .boxed-text-2 .glitch-3 {
+      height: 9.661vw;
   }
 
   header .boxed-text-2 .glitch-2 {
-    top: 30px;
+      top: 7.246vw;
   }
 
   header .boxed-text-2 .glitch-4 {
-    width: 41px;
-    height: 18px;
-    bottom: -10px;
+      width: 9.903vw;
+      height: 4.348vw;
+      bottom: -2.415vw;
   }
 
   main {
-    padding: 0 0 30px;
+      padding: 0 0 7.246vw;
   }
 
   main .folders-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 16px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 3.864vw;
 
-    padding: 30px 20px;
+      padding: 7.246vw 4.830vw;
   }
 
   main .folders-list > div:empty {
-    display: none;
+      display: none;
   }
 
   main .folders-list .folder {
-    padding: 25px 6px;
+      padding: 6.038vw 1.449vw;
 
-    height: 142px;
+      height: 34.299vw;
   }
 
   main .banner-container {
-    gap: 14px;
+      gap: 3.382vw;
   }
 
   main .banner-container img {
-    height: 414px;
+      height: 100vw;
   }
 
   main .banner-container .content-container {
-    padding: 0 20px;
-
-    width: 100%;
+      padding: 0 4.830vw;
+      width: 100%;
   }
 
   main .folders-list .folder span {
-    font-size: 15px;
-    line-height: 110%;
-    letter-spacing: -1.037px;
+      font-size: 3.623vw;
+      line-height: 110%;
+      letter-spacing: -0.250vw;
   }
+
 }

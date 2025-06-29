@@ -409,7 +409,7 @@ header > *:not(:first-child) {
   z-index: 10;
 }
 
-.shadowed-text::before {
+.shadowed-text::before, .shadowed-text .shadow-text {
   content: var(--content);
 
   position: absolute;

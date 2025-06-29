@@ -212,7 +212,7 @@ main .envelopes-container .envelope:nth-child(2n):hover {
 }
 
 main .one-stranger-life-poster {
-  height: 54.43vw;
+  height: 52vw;
   object-fit: cover;
 }
 
@@ -231,152 +231,152 @@ main .shop-text-container {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   header .boxed-text-1 {
-    padding: 10px 20px;
+    padding: 2.415vw 4.830vw;
 
-    top: 186px;
-    left: 18px;
+    top: 44.927vw;
+    left: 4.348vw;
   }
 
   header .boxed-text-1 .glitch-1 {
-    width: 144px;
-    height: 24px;
-    top: -13px;
-    left: 13px;
+      width: 34.783vw;
+      height: 5.797vw;
+      top: -3.140vw;
+      left: 3.140vw;
   }
 
   header .header-text#menu-open {
-    background: #fff;
+      background: #fff;
   }
 
   header .boxed-text-1 .glitch-4 {
-    width: 39px;
-    height: 43px;
+      width: 9.420vw;
+      height: 10.387vw;
 
-    bottom: 10px;
-    top: unset;
+      bottom: 2.415vw;
+      top: unset;
   }
 
   header .boxed-text-1 .glitch-5 {
-    width: 138px;
-    height: 19px;
+      width: 33.333vw;
+      height: 4.591vw;
 
-    left: 20px;
-    bottom: -22px;
+      left: 4.830vw;
+      bottom: -5.314vw;
   }
 
   header .boxed-text-1 .glitch-6 {
-    width: 168px;
-    height: 48px;
+      width: 40.579vw;
+      height: 11.594vw;
 
-    bottom: -32px;
-    right: -20px;
+      bottom: -7.729vw;
+      right: -4.830vw;
   }
 
   header .boxed-text-2 {
-    padding: 13px 11px;
+      padding: 3.140vw 2.657vw;
 
-    right: 32px;
-    bottom: 126px;
+      right: 7.729vw;
+      bottom: 30.435vw;
   }
 
   header .boxed-text-2 .glitch-0 {
-    width: 52px;
-    height: 55px;
+      width: 12.560vw;
+      height: 13.285vw;
 
-    top: -20px;
+      top: -4.830vw;
   }
 
   header .boxed-text-2 .glitch-1 {
-    width: 205px;
-    height: 45px;
+      width: 49.518vw;
+      height: 10.870vw;
   }
 
   header .boxed-text-2 .glitch-2 {
-    width: 299px;
-    height: 45px;
+      width: 72.222vw;
+      height: 10.870vw;
 
-    top: 10px;
-    left: -19px;
+      top: 2.415vw;
+      left: -4.591vw;
   }
 
   main .content-container {
-    padding: 0 20px;
+      padding: 0 4.830vw;
   }
 
   header .boxed-text-2 .glitch-3 {
-    width: 243px;
-    height: 30px;
+      width: 58.696vw;
+      height: 7.246vw;
   }
 
   header .boxed-text-2 .glitch-4 {
-    width: 48px;
-    height: 21px;
+      width: 11.594vw;
+      height: 5.072vw;
 
-    bottom: -10px;
-    left: 25px;
+      bottom: -2.415vw;
+      left: 6.038vw;
   }
 
   main {
-    padding: 0;
-    gap: 30px;
+      padding: 0;
+      gap: 7.246vw;
   }
 
   main .envelopes-container {
-    padding: 30px 20px 0;
+      padding: 7.246vw 4.830vw 0;
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 15px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 3.623vw;
   }
 
   main .envelopes-container .envelope {
-    height: 117px;
+      height: 28.261vw;
 
-    padding-right: 8px;
+      padding-right: 1.932vw;
 
-    font-size: 15px;
-    line-height: 110%;
-    letter-spacing: -0.741px;
+      font-size: 3.623vw;
+      line-height: 110%;
+      letter-spacing: -0.179vw;
   }
 
   main .one-stranger-life-poster {
-    width: 100%;
-    height: 245px;
-    object-fit: cover;
+      width: 100%;
+      height: 59.178vw;
+      object-fit: cover;
   }
 
   main .shop-text-container > :last-child {
-    display: none;
+      display: none;
   }
 
   main .shop-poster {
-    width: 100%;
-    height: 275px;
+      width: 100%;
+      height: 66.425vw;
 
-    object-fit: cover;
+      object-fit: cover;
   }
 
   .warning {
-    display: block;
+      display: block;
 
-    padding: 10px;
+      padding: 2.415vw;
 
-    border: 3px dashed #F5DA24;
-    background: #000;
+      border: 0.725vw dashed #F5DA24;
+      background: #000;
 
-    color: #F5DA24;
-    font-family: "Helvetica Neue", sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%;
-    letter-spacing: -0.9px;
-    text-transform: lowercase;
+      color: #F5DA24;
+      font-family: "Helvetica Neue", sans-serif;
+      font-size: 4.348vw;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 110%;
+      letter-spacing: -0.217vw;
+      text-transform: lowercase;
   }
 
   main .envelopes-container .envelope:nth-child(n + 7) {
-    display: none;
+      display: none;
   }
 }

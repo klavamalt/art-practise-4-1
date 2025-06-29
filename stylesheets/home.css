@@ -12,9 +12,6 @@ main {
   position: relative;
 
   padding: 1.04vw 5.2vw 2.6vw;
-
-  /*background: url("../images/home/background.jpg") no-repeat;*/
-  /*background-size: cover;*/
 }
 
 main .cover-image, main canvas {
@@ -110,21 +107,21 @@ main .contacts .about-us.mobile {
   }
 
   main .contacts .about-us.mobile {
-    display: block;
+      display: block;
 
-    font-family: "Helvetica Neue", sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%; /* 28.8px */
-    letter-spacing: -1.2px;
+      font-family: "Helvetica Neue", sans-serif;
+      font-size: 5.797vw;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+      letter-spacing: -0.290vw;
   }
 
   main .contacts .about-us.desktop {
-    display: none;
+      display: none;
   }
 
   main .contacts .contacts-list {
-    display: none;
+      display: none;
   }
 }

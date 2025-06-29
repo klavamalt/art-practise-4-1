@@ -477,216 +477,216 @@ main .book img {
   letter-spacing: -0.12vw;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .mobile {
     display: block !important;
   }
 
   .desktop {
-    display: none !important;
+      display: none !important;
   }
 
   header .header-text {
-    color: #F5DA24;
+      color: #F5DA24;
   }
 
   header .header-text#menu-open {
-    background: #F5DA24;
+      background: #F5DA24;
   }
-  
-  header .boxed-text-1 {
-    padding: 3px 20px;
 
-    left: 31px;
-    top: 104px;
+  header .boxed-text-1 {
+      padding: 0.725vw 4.830vw;
+
+      left: 7.487vw;
+      top: 25.121vw;
   }
 
   header .boxed-text-1 .glitch-0 {
-    width: 326px;
-    height: 73px;
+      width: 78.743vw;
+      height: 17.632vw;
   }
 
   header .boxed-text-1 .glitch-1 {
-    width: 255px;
-    height: 23px;
-    top: -13px;
-    left: 12px;
+      width: 61.594vw;
+      height: 5.556vw;
+      top: -3.140vw;
+      left: 2.899vw;
   }
 
   header .boxed-text-1 .glitch-2 {
-    width: 161px;
-    height: 15px;
+      width: 38.888vw;
+      height: 3.623vw;
 
-    bottom: 0;
-    right: 32px;
+      bottom: 0;
+      right: 7.729vw;
   }
 
   header .boxed-text-1 .glitch-4 {
-    width: 38px;
-    height: 42px;
-
+      width: 9.178vw;
+      height: 10.145vw;
   }
 
   header .boxed-text-1 .glitch-5 {
-    width: 160px;
-    height: 30px;
+      width: 38.647vw;
+      height: 7.246vw;
 
-    bottom: -10px;
-    left: -15px;
+      bottom: -2.415vw;
+      left: -3.623vw;
   }
 
   header .boxed-text-2 {
-    padding: 14px 16px 18px;
+      padding: 3.382vw 3.864vw 4.348vw;
 
-    right: 28px;
-    bottom: 115px;
+      right: 6.763vw;
+      bottom: 27.777vw;
   }
 
   header .boxed-text-2 .glitch-0 {
-    width: 51px;
-    height: 54px;
+      width: 12.319vw;
+      height: 13.043vw;
 
-    top: -20px;
-    right: 40px;
+      top: -4.830vw;
+      right: 9.661vw;
   }
 
   header .boxed-text-2 .glitch-1 {
-    height: 44px;
-    width: 200px;
+      height: 10.628vw;
+      width: 48.309vw;
   }
 
   header .boxed-text-2 .glitch-2 {
-    width: 322px;
-    height: 44px;
+      width: 77.777vw;
+      height: 10.628vw;
 
-    top: 34px;
-    left: -20px;
+      top: 8.212vw;
+      left: -4.830vw;
   }
 
   header .boxed-text-2 .glitch-3 {
-    width: 237px;
-    height: 44px;
+      width: 57.246vw;
+      height: 10.628vw;
 
-    left: 0;
+      left: 0;
   }
 
   header .boxed-text-2 .glitch-4 {
-    width: 46px;
-    height: 20px;
-    bottom: -14px;
+      width: 11.111vw;
+      height: 4.830vw;
+      bottom: -3.382vw;
   }
 
   main {
-    padding: 30px 20px;
-    gap: 30px;
+      padding: 7.246vw 4.830vw;
+      gap: 7.246vw;
   }
 
   main .about {
-    grid-template-columns: 1fr;
-    grid-gap: 15px;
+      grid-template-columns: 1fr;
+      grid-gap: 3.623vw;
   }
 
   main .book, main .book img {
-    height: 580px;
-    object-fit: cover;
+      height: 140.096vw;
+      object-fit: cover;
   }
 
   main .about .book-info {
-    gap: 12px;
+      gap: 2.899vw;
   }
 
   main .about .book-info .book-features {
-    grid-template-columns: 1fr;
-    grid-gap: 4px;
+      grid-template-columns: 1fr;
+      grid-gap: 0.966vw;
   }
 
   main .about .book-info .book-features .book-feature-text {
-    font-size: 15px;
-    line-height: 120%;
-    letter-spacing: -0.75px;
+      font-size: 3.623vw;
+      line-height: 120%;
+      letter-spacing: -0.181vw;
   }
 
   .popup-container .form-container {
-    padding: 22px;
-    gap: 10px;
+      padding: 5.314vw;
+      gap: 2.415vw;
 
-    width: 95vw;
+      width: 95vw;
   }
 
   .popup-container .form-container .bubble-1,
   .popup-container .form-container .bubble-2,
   .popup-container .form-container .bubble-3,
   .popup-container .form-container .bubble-4 {
-    width: 19px;
-    height: 19px;
+      width: 4.591vw;
+      height: 4.591vw;
   }
 
   .popup-container .form-container .form-wrapper {
-    padding: 22px;
-    gap: 12px;
+      padding: 5.314vw;
+      gap: 2.899vw;
   }
 
   .popup-container .form-container .form-wrapper .form-items {
-    gap: 12px;
+      gap: 2.899vw;
   }
 
   .popup-container .form-container .form-wrapper .form-title {
-    font-size: 21px;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -1.05px;
+      font-size: 5.072vw;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.253vw;
   }
 
   .popup-container .form-container .form-wrapper .form-items .form-items-group {
-    grid-template-columns: 1fr;
-    gap: 12px;
+      grid-template-columns: 1fr;
+      gap: 2.899vw;
   }
 
   .popup-container .form-container .form-wrapper .form-items .form-input-container {
-    gap: 3px;
+      gap: 0.725vw;
   }
 
   .popup-container .form-container .form-wrapper .form-items .form-input-container label {
-    font-size: 10px;
-    line-height: normal;
-    letter-spacing: -0.486px;
+      font-size: 2.415vw;
+      line-height: normal;
+      letter-spacing: -0.117vw;
   }
 
   .popup-container .form-container .form-wrapper .form-items .form-input-container input,
   .popup-container .form-container .form-wrapper .form-items .form-input-container textarea {
-    width: 100%;
+      width: 100%;
   }
 
   .popup-container .form-container .form-wrapper .form-items .form-input-container input,
   .popup-container .form-container .form-wrapper .form-items .form-input-container select,
   .popup-container .form-container .form-wrapper .form-items .form-input-container textarea {
-    padding: 7px 6px;
+      padding: 1.690vw 1.449vw;
 
-    border-radius: 2px;
-    border: 1px solid #D0D0D0;
+      border-radius: 0.483vw;
+      border: 0.242vw solid #D0D0D0;
 
-    font-size: 13px;
-    line-height: normal;
-    letter-spacing: -0.65px;
+      font-size: 3.140vw;
+      line-height: normal;
+      letter-spacing: -0.157vw;
   }
 
   .popup-container .form-container .form-wrapper .form-items .checkbox-container {
-    padding: 3px 0 3px 24px;
+      padding: 0.725vw 0 0.725vw 5.797vw;
 
-    font-size: 13px;
-    line-height: 100%;
-    letter-spacing: -0.65px;
+      font-size: 3.140vw;
+      line-height: 100%;
+      letter-spacing: -0.157vw;
   }
 
   .popup-container .form-container .form-wrapper .form-items .checkbox-container .checkmark {
-    width: 18px;
-    height: 18px;
+      width: 4.348vw;
+      height: 4.348vw;
 
-    border-width: 2px;
+      border-width: 0.483vw;
   }
 
   .popup-container .form-container .form-wrapper .form-items .checkbox-container .checkmark::before {
-    width: 8px;
-    height: 8px;
+      width: 1.932vw;
+      height: 1.932vw;
   }
+
 }

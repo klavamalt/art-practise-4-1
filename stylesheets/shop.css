@@ -1,3 +1,7 @@
+#product-title span {
+  white-space: pre-wrap;
+}
+
 header .boxed-text-1 {
   padding: 0.26vw 1.67vw 1.2vw 1.51vw;
   background: #000000;
@@ -195,102 +199,103 @@ main .product-info-container .product-price {
   main {
     grid-template-columns: 1fr;
 
-    padding: 30px 0 30px 20px;
-    gap: 15px;
+    padding: 7.246vw 0 7.246vw 4.830vw;
+    gap: 3.623vw;
   }
 
   main .items-list {
-    display: flex;
-    align-items: center;
+      display: flex;
+      align-items: center;
 
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 10px;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 2.415vw;
   }
 
   main .items-list img {
-    width: 277px;
-    height: 244px;
+      width: 66.908vw;
+      height: 58.938vw;
   }
 
   main .product-info-container {
-    padding-right: 20px;
+      padding-right: 4.830vw;
 
-    width: 74%;
-    gap: 15px;
+      width: 74%;
+      gap: 3.623vw;
   }
 
   main .product-info-container .product-info-wrapper {
-    gap: 15px;
+      gap: 3.623vw;
   }
 
   main .product-info-container .product-price {
-    font-size: 24px;
+      font-size: 5.797vw;
   }
 
   main .product-info-container .product-description {
-    font-size: 15px;
-    font-style: normal;
-    line-height: 120%;
-    letter-spacing: -0.75px;
+      font-size: 3.623vw;
+      font-style: normal;
+      line-height: 120%;
+      letter-spacing: -0.181vw;
   }
 
   header .boxed-text-1 {
-    left: 20px;
-    top: 231px;
+      left: 4.830vw;
+      top: 55.797vw;
 
-    padding: 2px 13px 10px 12px;
+      padding: 0.483vw 3.140vw 2.415vw 2.899vw;
   }
 
   header .boxed-text-1 .glitch-1 {
-    width: 119px;
-    height: 20px;
+      width: 28.743vw;
+      height: 4.830vw;
   }
 
   header .boxed-text-1 .glitch-2 {
-    width: 33px;
-    height: 38px;
+      width: 7.971vw;
+      height: 9.178vw;
 
-    right: -20px;
-    bottom: -20px;
+      right: -4.830vw;
+      bottom: -4.830vw;
   }
 
   header .boxed-text-1 .glitch-3 {
-    width: 61px;
-    height: 17px;
+      width: 14.734vw;
+      height: 4.106vw;
   }
 
   header .boxed-text-1 .glitch-4 {
-    width: 33px;
-    height: 38px;
+      width: 7.971vw;
+      height: 9.178vw;
   }
 
   header .boxed-text-2 {
-    bottom: 50px;
+      bottom: 12.077vw;
 
-    padding: 10px;
+      padding: 2.415vw;
   }
 
   header .boxed-text-2 .glitch-0 {
-    width: 83px;
-    height: 19px;
+      width: 20.048vw;
+      height: 4.591vw;
   }
 
   header .boxed-text-2 .glitch-1 {
-    height: 41px;
+      height: 9.903vw;
   }
 
   header .boxed-text-2 .glitch-2 {
-    height: 41px;
-    top: 35px;
+      height: 9.903vw;
+      top: 8.454vw;
   }
 
   header .boxed-text-2 .glitch-3 {
-    bottom: 2px;
+      bottom: 0.483vw;
   }
 
   header .boxed-text-2 .glitch-4 {
-    width: 44px;
-    height: 19px;
+      width: 10.628vw;
+      height: 4.591vw;
   }
+
 }

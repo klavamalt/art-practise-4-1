@@ -39,6 +39,11 @@ const productsList = [
     text: 'пляжный надувной круг с чёрно-белым графическим паттерном. диаметр 90 см. метафора поддержки, навигации и сохранения — для тех, кто учится держаться на плаву в потоке воспоминаний и информации. прочный винил, устойчивый к повреждениям.',
     price: '1490₽',
   },
+  {
+    title: 'блокнот Навиум:\nзвёздное отражение',
+    text: 'Твёрдый блокнот формата A5 с абстрактным чёрно-жёлтым дизайном, 192 листа кремовой бумаги 120 г/м², эластичной лентой и закладкой. Открывается на 180°, удобно для рисунков и заметок.',
+    price: '1490₽',
+  },
 ];
 
 const shopImages = document.querySelectorAll('.items-list img');
@@ -55,8 +60,7 @@ Array.from(shopImages, (el, index) => {
 
     const selectedProduct = productsList[index];
 
-    productTitle.setAttribute('style', `--content: '${selectedProduct.title.replace(/\n/g, ' ')}';`);
-    productTitle.querySelector('span').textContent = selectedProduct.title;
+    Array.from(productTitle.querySelectorAll('span'), el => el.textContent = selectedProduct.title);
     productDescription.textContent = selectedProduct.text;
     productPrice.textContent = selectedProduct.price;
   });
