@@ -51,8 +51,8 @@ const initDesktopBookElement = () => {
 
       if (width && height) {
         pageFlip.update({
-          width: newSize.width,
-          height: newSize.height,
+          width,
+          height,
         });
       }
     });
@@ -92,8 +92,8 @@ const initMobileBookElement = () => {
 
       if (width && height) {
         pageFlipMobile.update({
-          width: newSize.width,
-          height: newSize.height,
+          width,
+          height,
         });
       }
     });
