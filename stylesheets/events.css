@@ -185,7 +185,7 @@ main .banner-container img {
   object-fit: cover;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   header .boxed-text-1 {
     left: 9.903vw;
     top: 43.720vw;

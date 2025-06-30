@@ -1,13 +1,17 @@
 Array.from(document.querySelectorAll('[data-popup-target]'), element => {
   element.addEventListener('click', (event) => {
-    document.querySelector(event.currentTarget.dataset.popupTarget).classList.add('visible');
-    lockBodyScroll();
+    const popup = document.querySelector(event.currentTarget.dataset.popupTarget);
+
+    popup.classList.add('visible');
+    lockBodyScroll(popup);
   });
 });
 
 Array.from(document.querySelectorAll('.popup-close'), element => {
   element.addEventListener('click', (event) => {
-    event.currentTarget.parentElement.parentElement.classList.remove('visible');
-    unlockBodyScroll();
+    const popup = event.currentTarget.parentElement.parentElement;
+
+    popup.classList.remove('visible');
+    unlockBodyScroll(popup);
   });
 });

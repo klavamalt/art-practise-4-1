@@ -1,13 +1,23 @@
-const lockBodyScroll = () => {
-  const prevScroll = window.scrollY;
+let isBodyScrollLockInitialized = false;
 
-  document.body.style.overflow = 'hidden';
+const lockBodyScroll = (target) => {
+  if (!isBodyScrollLockInitialized) {
+    const script = document.createElement('script');
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js';
+    script.addEventListener('load', () => {
+      isBodyScrollLockInitialized = true;
+      lockBodyScroll(target);
+    })
 
-  setTimeout(() => window.scrollTo(0, prevScroll), 1);
+    document.head.appendChild(script);
+    return;
+  }
+
+  bodyScrollLock.disableBodyScroll(target);
 }
 
-const unlockBodyScroll = () => {
-  document.body.style.overflow = null;
+const unlockBodyScroll = (target) => {
+  bodyScrollLock.enableBodyScroll(target);
 }
 
 const menuContainer = document.querySelector('.menu-container');

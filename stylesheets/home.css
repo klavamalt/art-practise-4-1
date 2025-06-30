@@ -103,7 +103,18 @@ main .contacts .about-us.mobile {
 
 @media (max-width: 768px) {
   main {
+    background: url("../images/home/mobile-background.jpg") no-repeat center center/cover;
     height: 61vh;
+
+    padding: 2.34vw 2.6vw;
+  }
+
+  #menu-open {
+    right: 2.6vw;
+  }
+
+  main .cover-image {
+    display: none !important;
   }
 
   main .contacts .about-us.mobile {

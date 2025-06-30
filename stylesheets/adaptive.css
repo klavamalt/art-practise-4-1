@@ -30,6 +30,7 @@
       gap: 4.830vw;
 
       padding: 4.830vw;
+      height: calc(39vh - 11.352vw);
   }
 
   footer > :nth-child(1) {
@@ -210,5 +211,17 @@
 
   header .cover-image canvas {
       display: none !important;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+  .popup-content-container {
+    overflow-y: auto;
+
+    padding-bottom: 10vh;
+  }
+
+  .popup {
+    margin-top: 50vh;
   }
 }

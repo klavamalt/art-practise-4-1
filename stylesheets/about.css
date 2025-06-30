@@ -10,7 +10,7 @@ header .boxed-text-1 .glitch-0 {
   position: absolute;
 
   width: 100%;
-  height: 83px;
+  height: 5vw;
 
   background: #000000;
 
@@ -219,7 +219,7 @@ main .map-container .map.mobile {
   display: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   header .boxed-text-1 {
     padding: 0.483vw 2.657vw 1.208vw 2.415vw;
 

@@ -477,7 +477,7 @@ main .book img {
   letter-spacing: -0.12vw;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .mobile {
     display: block !important;
   }
