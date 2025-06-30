@@ -45,6 +45,17 @@ const initDesktopBookElement = () => {
     );
 
     pageFlip.loadFromHTML(document.querySelectorAll('.book.desktop .book-page'));
+
+    window.addEventListener('resize', () => {
+      const { width, height } = bookDesktopElement.getBoundingClientRect();
+
+      if (width && height) {
+        pageFlip.update({
+          width: newSize.width,
+          height: newSize.height,
+        });
+      }
+    });
   } else {
     isDesktopInitialized = false;
   }
@@ -75,6 +86,17 @@ const initMobileBookElement = () => {
     );
 
     pageFlipMobile.loadFromHTML(document.querySelectorAll('.book.mobile .book-page'));
+
+    window.addEventListener('resize', () => {
+      const { width, height } = bookMobileElement.getBoundingClientRect();
+
+      if (width && height) {
+        pageFlipMobile.update({
+          width: newSize.width,
+          height: newSize.height,
+        });
+      }
+    });
   } else {
     isMobileInitialized = true;
   }
