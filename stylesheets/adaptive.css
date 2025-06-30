@@ -27,7 +27,7 @@
   footer {
       display: grid;
       grid-template-columns: 0.6fr 1fr;
-      gap: 4.830vw;
+      gap: 2px 3.930vw;
 
       padding: 4.830vw;
       min-height: calc(39vh - 11.352vw);
@@ -61,9 +61,9 @@
   }
 
   footer a {
-      font-size: 3.623vw;
+      font-size: 4.923vw;
       font-weight: 400;
-      line-height: 120%;
+      line-height: 100%;
       letter-spacing: -0.181vw;
       text-align: right;
   }
