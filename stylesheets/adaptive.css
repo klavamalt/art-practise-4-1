@@ -30,7 +30,7 @@
       gap: 4.830vw;
 
       padding: 4.830vw;
-      height: calc(39vh - 11.352vw);
+      min-height: calc(39vh - 11.352vw);
   }
 
   footer > :nth-child(1) {
